@@ -39,4 +39,13 @@ Figure 1 shows the varying IQ levels in children with high lead levels or low le
 Table
 Table 1 shows IQ levels based on location from the smelter. 
 
+```{r}
+# removing outlier
+omit <- c("999")
+# making new dataset without the outlier
+leadiq <- leadiq[!leadiq$IQ %in% omit,]
+
+mean(leadiq$IQ)
+sd(leadiq$IQ)
+```
 
