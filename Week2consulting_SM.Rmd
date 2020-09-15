@@ -46,6 +46,6 @@ omit <- c("999")
 leadiq <- leadiq[!leadiq$IQ %in% omit,]
 
 mean(leadiq$IQ)
-sd(leadiq$IQ)
+sd(leadiq$IQ) 
 ```
 
